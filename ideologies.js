@@ -2,100 +2,100 @@ ideologies = [
     {
         "name": "Raptorismus",
         "stats": {
-            "rBruch": 100,
-            "pRaptr": 100,
-            "reddit": 60,
-            "schlet": 80
+            "lBr": 100,
+            "aRp": 100,
+            "dsc": 60,
+            "gut": 80
         }
     },
     {
         "name": "Sozialliberalismus",
         "stats": {
-            "rBruch": 50,
-            "pRaptr": 50,
-            "reddit": 0,
-            "schlet": 70
+            "lBr": 50,
+            "aRp": 50,
+            "dsc": 0,
+            "gut": 70
         }
     },
     {
         "name": "Libertärer Ifaqismus",
         "stats": {
-            "rBruch": 100,
-            "pRaptr": 10,
-            "reddit": 0,
-            "schlet": 50
+            "lBr": 100,
+            "aRp": 10,
+            "dsc": 0,
+            "gut": 50
         }
     },
     {
         "name": "Absoluter Nussismus",
         "stats": {
-            "rBruch": 100,
-            "pRaptr": 0,
-            "reddit": 0,
-            "schlet": 0
+            "lBr": 100,
+            "aRp": 0,
+            "dsc": 0,
+            "gut": 0
         }
     },
     {
         "name": "Moderat extremer Nussismus",
         "stats": {
-            "rBruch": 80,
-            "pRaptr": 20,
-            "reddit": 20,
-            "schlet": 20
+            "lBr": 80,
+            "aRp": 20,
+            "dsc": 20,
+            "gut": 20
         }
     },
     {
         "name": "Libhindismus",
         "stats": {
-            "rBruch": 50,
-            "pRaptr": 50,
-            "reddit": 50,
-            "schlet": 50
+            "lBr": 50,
+            "aRp": 50,
+            "dsc": 50,
+            "gut": 50
         }
     },
     {
         "name": "Technokratischer Raumfahrtprogrammologismus",
         "stats": {
-            "rBruch": 50,
-            "pRaptr": 100,
-            "reddit": 75,
-            "schlet": 75
+            "lBr": 50,
+            "aRp": 100,
+            "dsc": 75,
+            "gut": 75
         }
     },
     {
         "name": "Apfelmus",
         "stats": {
-            "rBruch": 60,
-            "pRaptr": 20,
-            "reddit": 10,
-            "schlet": 20
+            "lBr": 60,
+            "aRp": 20,
+            "dsc": 10,
+            "gut": 20
         }
     },
     {
         "name": "Religiöser Semarcismus",
         "stats": {
-            "rBruch": 0,
-            "pRaptr": 0,
-            "reddit": 0,
-            "schlet": 100
+            "lBr": 0,
+            "aRp": 0,
+            "dsc": 0,
+            "gut": 100
         }
     },
     {
         "name": "Darrinistischer Semarcismus",
         "stats": {
-            "rBruch": 20,
-            "pRaptr": 10,
-            "reddit": 20,
-            "schlet": 100
+            "lBr": 20,
+            "aRp": 10,
+            "dsc": 20,
+            "gut": 100
         }
     },
     {
         "name": "Radikaler Antizentrismus",
         "stats": {
-            "rBruch": 0,
-            "pRaptr": 0,
-            "reddit": 0,
-            "schlet": 0
+            "lBr": 0,
+            "aRp": 0,
+            "dsc": 0,
+            "gut": 0
         }
     },
 ];

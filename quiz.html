@@ -24,18 +24,18 @@
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_rBruch, max_pRaptr, max_reddit, max_schlet; // Max possible scores
-    max_rBruch = max_pRaptr = max_reddit = max_schlet = 0;
-    var rBruch, pRaptr, reddit, schlet; // User's scores
-    rBruch = pRaptr = reddit = schlet = 0;
+    var max_lBr, max_aRp, max_dsc, max_gut; // Max possible scores
+    max_lBr = max_aRp = max_dsc = max_gut = 0;
+    var lBr, aRp, dsc, gut; // User's scores
+    lBr = aRp = dsc = gut = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_rBruch += Math.abs(questions[i].effect.rBruch)
-        max_pRaptr += Math.abs(questions[i].effect.pRaptr)
-        max_reddit += Math.abs(questions[i].effect.reddit)
-        max_schlet += Math.abs(questions[i].effect.schlet)
+        max_lBr += Math.abs(questions[i].effect.lBr)
+        max_aRp += Math.abs(questions[i].effect.aRp)
+        max_dsc += Math.abs(questions[i].effect.dsc)
+        max_gut += Math.abs(questions[i].effect.gut)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -51,10 +51,10 @@
     }
 
     function next_question(mult) {
-        rBruch += mult*questions[qn].effect.rBruch
-        pRaptr += mult*questions[qn].effect.pRaptr
-        reddit += mult*questions[qn].effect.reddit
-        schlet += mult*questions[qn].effect.schlet
+        lBr += mult*questions[qn].effect.lBr
+        aRp += mult*questions[qn].effect.aRp
+        dsc += mult*questions[qn].effect.dsc
+        gut += mult*questions[qn].effect.gut
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -68,10 +68,10 @@
             return;
         }
         qn--;
-        rBruch -= prev_answer * questions[qn].effect.rBruch;
-        pRaptr -= prev_answer * questions[qn].effect.pRaptr;
-        reddit -= prev_answer * questions[qn].effect.reddit;
-        schlet -= prev_answer * questions[qn].effect.schlet;
+        lBr -= prev_answer * questions[qn].effect.lBr;
+        aRp -= prev_answer * questions[qn].effect.aRp;
+        dsc -= prev_answer * questions[qn].effect.dsc;
+        gut -= prev_answer * questions[qn].effect.gut;
         prev_answer = null;
         init_question();
 
@@ -81,10 +81,10 @@
     }
     function results() {
         location.href = `results.html`
-            + `?e=${calc_score(rBruch,max_rBruch)}`
-            + `&d=${calc_score(pRaptr,max_pRaptr)}`
-            + `&g=${calc_score(reddit,max_reddit)}`
-            + `&s=${calc_score(schlet,max_schlet)}`
+            + `?e=${calc_score(lBr,max_lBr)}`
+            + `&d=${calc_score(aRp,max_aRp)}`
+            + `&g=${calc_score(dsc,max_dsc)}`
+            + `&s=${calc_score(gut,max_gut)}`
     }
 </script>
 </body>

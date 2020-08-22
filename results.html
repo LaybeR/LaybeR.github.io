@@ -35,10 +35,10 @@
 </div>
 <h2>Plattform-Achse: <span class="weight-300" id="state-label"></span></h2>
 <div class="axis">
-    <img id="img-liberty" src="value_images/redditor.svg" height="128pt"/>
+    <img id="img-liberty" src="value_images/discordler.svg" height="128pt"/>
     <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
     <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
-    <img id="img-authority" src="value_images/discordler.svg" height="128pt"/>
+    <img id="img-authority" src="value_images/redditor.svg" height="128pt"/>
 </div>
 <h2>Güte-Achse: <span class="weight-300" id="society-label"></span></h2>
 <div class="axis">
@@ -93,7 +93,7 @@ stats"></a></div></noscript>
 
     econArray = ["Linksbrecher","moderat extremer Linksbrecher","moderater Linksbrecher","Brecher","moderater Rechtsbrecher","moderat extremer Rechtsbrecher","Rechtsbrecher"]
     diplArray = [":kopfab:","Nieder mit dem Raptor","Raptor = uncool","E G A L","Unterstützer des Raptors","Raptorist","TPD"]
-    govtArray = ["Redditor","moderater Redditor","Lurker","Irgendwie beides?","schreibt nie",":thonk:","Absoluter Chad Discordler"]
+    govtArray = ["Absoluter Chad Discordler",":thonk:","besitzt unnötigen Discordaccount","Irgendwie beides?","Reddit-Lurker","moderater Redditor","Redditor"]
     sctyArray = [":lachenweinensauseaugen:",":lachenweinen:",":wirklich:",":flushed:",":kissing_heart:",":joy:",":see_no_evil:"]
 
     function setLabel(val,ary) {
@@ -135,10 +135,10 @@ stats"></a></div></noscript>
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.rBruch - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.pRaptr - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.reddit - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.schlet - progress), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.lBr - equality), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.aRp - liberty), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dsc - peace), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.gut - progress), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
