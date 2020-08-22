@@ -2,9 +2,9 @@ questions = [
     {
         "question": "Raptor tat nichts falsches!",
         "effect": {
-            "lBr": 10,
+            "rBr": -10,
             "aRp": 10,
-            "dsc": 10,
+            "red": -10,
             "gut": 10
         }
     }

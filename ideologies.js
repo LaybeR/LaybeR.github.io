@@ -2,99 +2,99 @@ ideologies = [
     {
         "name": "Raptorismus",
         "stats": {
-            "lBr": 100,
+            "rBr": 100,
             "aRp": 100,
-            "dsc": 60,
+            "red": 60,
             "gut": 80
         }
     },
     {
         "name": "Sozialliberalismus",
         "stats": {
-            "lBr": 50,
+            "rBr": 50,
             "aRp": 50,
-            "dsc": 0,
+            "red": 0,
             "gut": 70
         }
     },
     {
         "name": "Libertärer Ifaqismus",
         "stats": {
-            "lBr": 100,
+            "rBr": 100,
             "aRp": 10,
-            "dsc": 0,
+            "red": 0,
             "gut": 50
         }
     },
     {
         "name": "Absoluter Nussismus",
         "stats": {
-            "lBr": 100,
+            "rBr": 100,
             "aRp": 0,
-            "dsc": 0,
+            "red": 0,
             "gut": 0
         }
     },
     {
         "name": "Moderat extremer Nussismus",
         "stats": {
-            "lBr": 80,
+            "rBr": 80,
             "aRp": 20,
-            "dsc": 20,
+            "red": 20,
             "gut": 20
         }
     },
     {
         "name": "Libhindismus",
         "stats": {
-            "lBr": 50,
+            "rBr": 50,
             "aRp": 50,
-            "dsc": 50,
+            "red": 50,
             "gut": 50
         }
     },
     {
         "name": "Technokratischer Raumfahrtprogrammologismus",
         "stats": {
-            "lBr": 50,
+            "rBr": 50,
             "aRp": 100,
-            "dsc": 75,
+            "red": 75,
             "gut": 75
         }
     },
     {
         "name": "Apfelmus",
         "stats": {
-            "lBr": 60,
+            "rBr": 60,
             "aRp": 20,
-            "dsc": 10,
+            "red": 10,
             "gut": 20
         }
     },
     {
         "name": "Religiöser Semarcismus",
         "stats": {
-            "lBr": 0,
+            "rBr": 0,
             "aRp": 0,
-            "dsc": 0,
+            "red": 0,
             "gut": 100
         }
     },
     {
         "name": "Darrinistischer Semarcismus",
         "stats": {
-            "lBr": 20,
+            "rBr": 20,
             "aRp": 10,
-            "dsc": 20,
+            "red": 20,
             "gut": 100
         }
     },
     {
         "name": "Radikaler Antizentrismus",
         "stats": {
-            "lBr": 0,
+            "rBr": 0,
             "aRp": 0,
-            "dsc": 0,
+            "red": 0,
             "gut": 0
         }
     },

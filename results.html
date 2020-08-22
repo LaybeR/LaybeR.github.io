@@ -135,9 +135,9 @@ stats"></a></div></noscript>
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.lBr - equality), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.rBr - equality), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.aRp - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dsc - peace), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.red - peace), 1.73856063)
         dist += Math.pow(Math.abs(ideologies[i].stats.gut - progress), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name

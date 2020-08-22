@@ -24,17 +24,17 @@
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_lBr, max_aRp, max_dsc, max_gut; // Max possible scores
-    max_lBr = max_aRp = max_dsc = max_gut = 0;
-    var lBr, aRp, dsc, gut; // User's scores
-    lBr = aRp = dsc = gut = 0;
+    var max_rBr, max_aRp, max_red, max_gut; // Max possible scores
+    max_rBr = max_aRp = max_red = max_gut = 0;
+    var rBr, aRp, red, gut; // User's scores
+    rBr = aRp = red = gut = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_lBr += Math.abs(questions[i].effect.lBr)
+        max_rBr += Math.abs(questions[i].effect.rBr)
         max_aRp += Math.abs(questions[i].effect.aRp)
-        max_dsc += Math.abs(questions[i].effect.dsc)
+        max_red += Math.abs(questions[i].effect.red)
         max_gut += Math.abs(questions[i].effect.gut)
     }
     function init_question() {
@@ -51,9 +51,9 @@
     }
 
     function next_question(mult) {
-        lBr += mult*questions[qn].effect.lBr
+        rBr += mult*questions[qn].effect.rBr
         aRp += mult*questions[qn].effect.aRp
-        dsc += mult*questions[qn].effect.dsc
+        red += mult*questions[qn].effect.red
         gut += mult*questions[qn].effect.gut
         qn++;
         prev_answer = mult;
@@ -68,9 +68,9 @@
             return;
         }
         qn--;
-        lBr -= prev_answer * questions[qn].effect.lBr;
+        rBr -= prev_answer * questions[qn].effect.rBr;
         aRp -= prev_answer * questions[qn].effect.aRp;
-        dsc -= prev_answer * questions[qn].effect.dsc;
+        red -= prev_answer * questions[qn].effect.red;
         gut -= prev_answer * questions[qn].effect.gut;
         prev_answer = null;
         init_question();
@@ -81,9 +81,9 @@
     }
     function results() {
         location.href = `results.html`
-            + `?e=${calc_score(lBr,max_lBr)}`
+            + `?e=${calc_score(rBr,max_rBr)}`
             + `&d=${calc_score(aRp,max_aRp)}`
-            + `&g=${calc_score(dsc,max_dsc)}`
+            + `&g=${calc_score(red,max_red)}`
             + `&s=${calc_score(gut,max_gut)}`
     }
 </script>
