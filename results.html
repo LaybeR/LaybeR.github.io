@@ -91,10 +91,10 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    econArray = ["Linksbrecher","moderat extremer Linksbrecher","moderater Linksbrecher","Brecher (niemand weiß was du brichst)","moderater Rechtsbrecher","moderat extremer Rechtsbrecher","Rechtsbrecher"]
+    diplArray = ["TPD","Raptorist","Unterstützer des Raptors","E G A L","Raptor = uncool","Nieder mit dem Raptor",":kopfab:"]
+    govtArray = ["Redditor","moderater Redditor","Lurker","Irgendwie beides?","schreibt nie",":thonk:","Absoluter Chad Discordler"]
+    sctyArray = [":see_no_evil:",":joy:",":kissing_heart:",":flushed:",":wirklich:",":lachenweinen:",":lachenweinensauseaugen:"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -135,10 +135,10 @@ stats"></a></div></noscript>
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.rBruch - equality), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.pRaptr - liberty), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.reddit - peace), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.schlet - progress), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
