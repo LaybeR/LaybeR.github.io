@@ -3,9 +3,9 @@ questions = [
         "question": "Raptor tat nichts falsches!",
         "effect": {
             "rBruch": 5,
-            "pRaptr": -10,
+            "pRaptr": 10,
             "reddit": 0,
-            "schlet": -5
+            "schlet": 5
         }
     },
     {
@@ -23,16 +23,16 @@ questions = [
             "rBruch": 0,
             "pRaptr": 0,
             "reddit": -10,
-            "schlet": 5
+            "schlet": -5
         }
     },
     {
         "question": "Gesetzes müssen immer wortwörtlich ausgelegt werden.",
         "effect": {
             "rBruch": 15,
-            "pRaptr": 5,
+            "pRaptr": -5,
             "reddit": 0,
-            "schlet": -5
+            "schlet": 5
         }
     },
     {
@@ -41,16 +41,16 @@ questions = [
             "rBruch": -5,
             "pRaptr": 0,
             "reddit": -10,
-            "schlet": 5
+            "schlet": -5
         }
     },
     {
         "question": "Heimurlaub ist ein Menschenrecht.",
         "effect": {
             "rBruch": 0,
-            "pRaptr": -15,
+            "pRaptr": 10,
             "reddit": 0,
-            "schlet": -5
+            "schlet": 5
         }
     },
     {
@@ -59,7 +59,7 @@ questions = [
             "rBruch": 0,
             "pRaptr": 0,
             "reddit": -5,
-            "schlet": 10
+            "schlet": -10
         }
     },
     {
@@ -68,7 +68,7 @@ questions = [
             "rBruch": 0,
             "pRaptr": 0,
             "reddit": 0,
-            "schlet": -10
+            "schlet": 10
         }
     },
     {
@@ -77,7 +77,7 @@ questions = [
             "rBruch": -5,
             "pRaptr": 0,
             "reddit": -10,
-            "schlet": 5
+            "schlet": -5
         }
     },
     {
@@ -95,7 +95,7 @@ questions = [
             "rBruch": -10,
             "pRaptr": 0,
             "reddit": 0,
-            "schlet": 10
+            "schlet": -10
         }
     },
     {
@@ -104,14 +104,14 @@ questions = [
             "rBruch": 10,
             "pRaptr": 0,
             "reddit": 0,
-            "schlet": -10
+            "schlet": 10
         }
     },
     {
         "question": "Schiedsgerichte sind gut.",
         "effect": {
             "rBruch": -5,
-            "pRaptr": 10,
+            "pRaptr": -10,
             "reddit": 0,
             "schlet": 0
         }
@@ -120,7 +120,7 @@ questions = [
         "question": "Die Änderungen zu 2020 sind so gut, dass es auch Änderungen zu 2021 geben sollten!",
         "effect": {
             "rBruch": 10,
-            "pRaptr": -20,
+            "pRaptr": 20,
             "reddit": 0,
             "schlet": 0
         }
@@ -129,18 +129,18 @@ questions = [
         "question": "Der Moderationsleiter sollte mit Gottkaiser angesprochen werden",
         "effect": {
             "rBruch": 5,
-            "pRaptr": -5,
+            "pRaptr": 5,
             "reddit": -5,
-            "schlet": -5
+            "schlet": 5
         }
     },
     {
         "question": "Die Simulation benötigt eine starke Moderation die aktiv in die Geschehnisse eingreift.",
         "effect": {
             "rBruch": 10,
-            "pRaptr": -10,
+            "pRaptr": 10,
             "reddit": 0,
-            "schlet": -5
+            "schlet": 5
         }
     },
     {
@@ -149,7 +149,7 @@ questions = [
             "rBruch": 0,
             "pRaptr": 0,
             "reddit": -20,
-            "schlet": 5
+            "schlet": -5
         }
     }
 ];
