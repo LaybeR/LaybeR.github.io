@@ -28,10 +28,10 @@
 </div>
 <h2>Raptor-Achse: <span class="weight-300" id="diplomatic-label"></span></h2>
 <div class="axis">
-    <img id="img-might" src="value_images/antiRaptor.svg" height="128pt"/>
+    <img id="img-might" src="value_images/proRaptor.svg" height="128pt"/>
     <div class="bar might" id="bar-might"><div class="text-wrapper" id="might"></div></div>
     <div class="bar peace" id="bar-peace"><div class="text-wrapper" id="peace"></div></div>
-    <img id="img-peace" src="value_images/proRaptor.svg" height="128pt"/>
+    <img id="img-peace" src="value_images/antiRaptor.svg" height="128pt"/>
 </div>
 <h2>Plattform-Achse: <span class="weight-300" id="state-label"></span></h2>
 <div class="axis">
@@ -42,10 +42,10 @@
 </div>
 <h2>Güte-Achse: <span class="weight-300" id="society-label"></span></h2>
 <div class="axis">
-    <img id="img-tradition" src="value_images/gut.svg" height="128pt"/>
+    <img id="img-tradition" src="value_images/schlecht.svg" height="128pt"/>
     <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
     <div class="bar progress" id="bar-progress"><div class="text-wrapper" id="progress"></div></div>
-    <img id="img-progress" src="value_images/schlecht.svg" height="128pt"/>
+    <img id="img-progress" src="value_images/gut.svg" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
@@ -91,10 +91,10 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Linksbrecher","moderat extremer Linksbrecher","moderater Linksbrecher","Brecher (niemand weiß was du brichst)","moderater Rechtsbrecher","moderat extremer Rechtsbrecher","Rechtsbrecher"]
-    diplArray = ["TPD","Raptorist","Unterstützer des Raptors","E G A L","Raptor = uncool","Nieder mit dem Raptor",":kopfab:"]
+    econArray = ["Linksbrecher","moderat extremer Linksbrecher","moderater Linksbrecher","Brecher","moderater Rechtsbrecher","moderat extremer Rechtsbrecher","Rechtsbrecher"]
+    diplArray = [":kopfab:","Nieder mit dem Raptor","Raptor = uncool","E G A L","Unterstützer des Raptors","Raptorist","TPD"]
     govtArray = ["Redditor","moderater Redditor","Lurker","Irgendwie beides?","schreibt nie",":thonk:","Absoluter Chad Discordler"]
-    sctyArray = [":see_no_evil:",":joy:",":kissing_heart:",":flushed:",":wirklich:",":lachenweinen:",":lachenweinensauseaugen:"]
+    sctyArray = [":lachenweinensauseaugen:",":lachenweinen:",":wirklich:",":flushed:",":kissing_heart:",":joy:",":see_no_evil:"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -203,7 +203,7 @@ stats"></a></div></noscript>
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("8values", 20, 90)
+        ctx.fillText("MBundestag", 20, 90)
         ctx.font="50px Montserrat"
         ctx.fillText(ideology, 20, 140)
 
@@ -218,14 +218,14 @@ stats"></a></div></noscript>
         if (authority > 30) {ctx.fillText(authority + "%", 670, 477.5)}
         if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
 
-        ctx.font="300 30px Montserrat"
+        ctx.font="300 23px Montserrat"
         ctx.fillText("8values.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
-        ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
-        ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
-        ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
+        ctx.fillText("Bruchart-Achse: " + document.getElementById("economic-label").innerHTML, 400, 175)
+        ctx.fillText("Raptor-Achse: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
+        ctx.fillText("Plattform-Achse: " + document.getElementById("state-label").innerHTML, 400, 415)
+        ctx.fillText("Güte-Achse: " + document.getElementById("society-label").innerHTML, 400, 535)
 
         document.getElementById("banner").src = c.toDataURL();
     }
