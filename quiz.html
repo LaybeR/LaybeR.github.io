@@ -1,0 +1,90 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>8values Quiz</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+</head>
+<body>
+<script type="application/javascript"
+        src="questions.js">
+</script>
+<h1>MBundestag-Unfalltest</h1>
+<hr>
+<h2 style="text-align:center;" id="question-number">Ladend...</h2>
+<p class="question" id="question-text"></p>
+<button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Starke Zustimmend</button> <br>
+<button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Zustimmend</button> <br>
+<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsicher</button> <br>
+<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Ablehnend</button> <br>
+<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Stark Ablehnend</button> <br>
+<button class="small_button" onclick="prev_question()" id="back_button">Zurück</button>
+<button class="small_button_off" id="back_button_off">Zurück</button><br>
+
+<!-- JavaScript for the test itself -->
+<script>
+    var max_rBruch, max_pRaptr, max_reddit, max_schlet; // Max possible scores
+    max_rBruch = max_pRaptr = max_reddit = max_schlet = 0;
+    var rBruch, pRaptr, reddit, schlet; // User's scores
+    rBruch = pRaptr = reddit = schlet = 0;
+    var qn = 0; // Question number
+    var prev_answer = null;
+    init_question();
+    for (var i = 0; i < questions.length; i++) {
+        max_rBruch += Math.abs(questions[i].effect.rBruch)
+        max_pRaptr += Math.abs(questions[i].effect.pRaptr)
+        max_reddit += Math.abs(questions[i].effect.reddit)
+        max_schlet += Math.abs(questions[i].effect.schlet)
+    }
+    function init_question() {
+        document.getElementById("question-text").innerHTML = questions[qn].question;
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
+        if (prev_answer == null) {
+            document.getElementById("back_button").style.display = 'none';
+            document.getElementById("back_button_off").style.display = 'block';
+        } else {
+            document.getElementById("back_button").style.display = 'block';
+            document.getElementById("back_button_off").style.display = 'none';
+        }
+
+    }
+
+    function next_question(mult) {
+        rBruch += mult*questions[qn].effect.rBruch
+        pRaptr += mult*questions[qn].effect.pRaptr
+        reddit += mult*questions[qn].effect.reddit
+        schlet += mult*questions[qn].effect.schlet
+        qn++;
+        prev_answer = mult;
+        if (qn < questions.length) {
+            init_question();
+        } else {
+            results();
+        }
+    }
+    function prev_question() {
+        if (prev_answer == null) {
+            return;
+        }
+        qn--;
+        rBruch -= prev_answer * questions[qn].effect.rBruch;
+        pRaptr -= prev_answer * questions[qn].effect.pRaptr;
+        reddit -= prev_answer * questions[qn].effect.reddit;
+        schlet -= prev_answer * questions[qn].effect.schlet;
+        prev_answer = null;
+        init_question();
+
+    }
+    function calc_score(score,max) {
+        return (100*(max+score)/(2*max)).toFixed(1)
+    }
+    function results() {
+        location.href = `results.html`
+            + `?e=${calc_score(rBruch,max_rBruch)}`
+            + `&d=${calc_score(pRaptr,max_pRaptr)}`
+            + `&g=${calc_score(reddit,max_reddit)}`
+            + `&s=${calc_score(schlet,max_schlet)}`
+    }
+</script>
+</body>
