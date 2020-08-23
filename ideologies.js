@@ -3,9 +3,9 @@ ideologies = [
         "name": "Raptorismus",
         "stats": {
             "rBr": 100,
-            "aRp": 100,
+            "aRp": 0,
             "red": 60,
-            "gut": 80
+            "gut": 20
         }
     },
     {
@@ -14,14 +14,14 @@ ideologies = [
             "rBr": 50,
             "aRp": 50,
             "red": 0,
-            "gut": 70
+            "gut": 30
         }
     },
     {
         "name": "Libertärer Ifaqismus",
         "stats": {
-            "rBr": 100,
-            "aRp": 10,
+            "rBr": 20,
+            "aRp": 90,
             "red": 0,
             "gut": 50
         }
@@ -29,19 +29,19 @@ ideologies = [
     {
         "name": "Absoluter Nussismus",
         "stats": {
-            "rBr": 100,
-            "aRp": 0,
+            "rBr": 0,
+            "aRp": 100,
             "red": 0,
-            "gut": 0
+            "gut": 100
         }
     },
     {
         "name": "Moderat extremer Nussismus",
         "stats": {
-            "rBr": 80,
-            "aRp": 20,
+            "rBr": 20,
+            "aRp": 80,
             "red": 20,
-            "gut": 20
+            "gut": 80
         }
     },
     {
@@ -57,45 +57,45 @@ ideologies = [
         "name": "Technokratischer Raumfahrtprogrammologismus",
         "stats": {
             "rBr": 50,
-            "aRp": 100,
+            "aRp": 0,
             "red": 75,
-            "gut": 75
+            "gut": 25
         }
     },
     {
         "name": "Apfelmus",
         "stats": {
-            "rBr": 60,
-            "aRp": 20,
+            "rBr": 40,
+            "aRp": 80,
             "red": 10,
-            "gut": 20
+            "gut": 80
         }
     },
     {
         "name": "Religiöser Semarcismus",
         "stats": {
-            "rBr": 0,
-            "aRp": 0,
+            "rBr": 100,
+            "aRp": 100,
             "red": 0,
-            "gut": 100
+            "gut": 0
         }
     },
     {
         "name": "Darrinistischer Semarcismus",
         "stats": {
-            "rBr": 20,
-            "aRp": 10,
+            "rBr": 80,
+            "aRp": 90,
             "red": 20,
-            "gut": 100
+            "gut": 0
         }
     },
     {
         "name": "Radikaler Antizentrismus",
         "stats": {
             "rBr": 0,
-            "aRp": 0,
+            "aRp": 100,
             "red": 0,
-            "gut": 0
+            "gut": 100
         }
     },
 ];
