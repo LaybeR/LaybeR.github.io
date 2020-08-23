@@ -54,7 +54,7 @@ ideologies = [
         }
     },
     {
-        "name": "Technokratischer Raumfahrtprogrammologismus",
+        "name": "Raumologismus",
         "stats": {
             "rBr": 50,
             "aRp": 0,
